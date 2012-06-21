@@ -19,8 +19,6 @@ profile
 *.xcworkspace
 !default.xcworkspace
 xcuserdata
-*.xcodeproj/project.xcworkspace/
-*.xcodeproj/xcuserdata/
 
 #
 # OS X noise
