@@ -19,6 +19,7 @@
 
 // Properties
 @property (nonatomic, retain) NSString *caption;
+@property (nonatomic, retain) NSURL *photoURL;  //added by Alison so AKVoteCaptionView can see it
 
 // Class
 + (MWPhoto *)photoWithImage:(UIImage *)image;

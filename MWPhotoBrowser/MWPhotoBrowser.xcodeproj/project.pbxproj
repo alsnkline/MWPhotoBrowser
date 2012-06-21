@@ -43,6 +43,8 @@
 		4C6F971B14AF711300F8389A /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F970914AF711300F8389A /* UIImageView+WebCache.m */; };
 		4C6F97C714AF74E200F8389A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6F97C614AF74E200F8389A /* MessageUI.framework */; };
 		4CB08BA314B1F38700730E9F /* MWPhotoProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CB08BA214B1F38700730E9F /* MWPhotoProtocol.h */; };
+		B1E31E911593C26700C35CEA /* AKVoteCaptionView.h in Headers */ = {isa = PBXBuildFile; fileRef = B1E31E8F1593C26700C35CEA /* AKVoteCaptionView.h */; };
+		B1E31E921593C26700C35CEA /* AKVoteCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E31E901593C26700C35CEA /* AKVoteCaptionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +87,8 @@
 		4C6F970914AF711300F8389A /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "Libraries/SDWebImage/UIImageView+WebCache.m"; sourceTree = SOURCE_ROOT; };
 		4C6F97C614AF74E200F8389A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		4CB08BA214B1F38700730E9F /* MWPhotoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWPhotoProtocol.h; path = Classes/MWPhotoProtocol.h; sourceTree = SOURCE_ROOT; };
+		B1E31E8F1593C26700C35CEA /* AKVoteCaptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AKVoteCaptionView.h; path = Classes/AKVoteCaptionView.h; sourceTree = SOURCE_ROOT; };
+		B1E31E901593C26700C35CEA /* AKVoteCaptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AKVoteCaptionView.m; path = Classes/AKVoteCaptionView.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 				4CB08BA214B1F38700730E9F /* MWPhotoProtocol.h */,
 				4C6F96D614AF70BD00F8389A /* MWCaptionView.h */,
 				4C6F96D714AF70BD00F8389A /* MWCaptionView.m */,
+				B1E31E8F1593C26700C35CEA /* AKVoteCaptionView.h */,
+				B1E31E901593C26700C35CEA /* AKVoteCaptionView.m */,
 				4C6F96EF14AF70DC00F8389A /* MWPhotoBrowser.bundle */,
 				4C6F96EE14AF70BF00F8389A /* Other */,
 				4C6F96F014AF70E800F8389A /* Libraries */,
@@ -237,6 +243,7 @@
 				4C6F971814AF711300F8389A /* UIButton+WebCache.h in Headers */,
 				4C6F971A14AF711300F8389A /* UIImageView+WebCache.h in Headers */,
 				4CB08BA314B1F38700730E9F /* MWPhotoProtocol.h in Headers */,
+				B1E31E911593C26700C35CEA /* AKVoteCaptionView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +311,7 @@
 				4C6F971714AF711300F8389A /* SDWebImagePrefetcher.m in Sources */,
 				4C6F971914AF711300F8389A /* UIButton+WebCache.m in Sources */,
 				4C6F971B14AF711300F8389A /* UIImageView+WebCache.m in Sources */,
+				B1E31E921593C26700C35CEA /* AKVoteCaptionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

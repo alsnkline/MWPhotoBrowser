@@ -40,6 +40,7 @@
 // Properties
 @synthesize underlyingImage = _underlyingImage, 
 caption = _caption;
+@synthesize photoURL = _photoURL;   //added by Alison so AKVoteCaptionView can see it
 
 #pragma mark Class Methods
 

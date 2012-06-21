@@ -5,11 +5,14 @@
 //  Created by Michael Waterfall on 21/10/2010.
 //  Copyright 2010 d3i. All rights reserved.
 //
+//  Added to by Alison Kline 
+//  Custom caption view created containing a single "Vote" button.
+//  When pressed the button reports the current PhotoURL back to its delegate.
+//  If the photo does not have a URL it reports 'nil'
+//
 
 #import "Menu.h"
-
-//test first commit on AK branch
-//another change
+#import "AKVoteCaptionView.h"
 
 @implementation Menu
 
@@ -162,11 +165,21 @@
     return nil;
 }
 
-//- (MWCaptionView *)photoBrowser:(MWPhotoBrowser *)photoBrowser captionViewForPhotoAtIndex:(NSUInteger)index {
-//    MWPhoto *photo = [self.photos objectAtIndex:index];
-//    MWCaptionView *captionView = [[MWCaptionView alloc] initWithPhoto:photo];
-//    return [captionView autorelease];
-//}
+- (MWCaptionView *)photoBrowser:(MWPhotoBrowser *)photoBrowser captionViewForPhotoAtIndex:(NSUInteger)index {
+    MWPhoto *photo = [self.photos objectAtIndex:index];
+    
+    // using AKVoteCaptionView in Demo instead of MWCaptionView
+    AKVoteCaptionView *captionView = [[AKVoteCaptionView alloc] initWithPhoto:photo andDelegate:self];
+    //    MWCaptionView *captionView = [[MWCaptionView alloc] initWithPhoto:photo];     
+    
+    return [captionView autorelease];
+}
+
+#pragma mark - AKVoteCaptionViewDelegate
+
+-(void)akVoteCaptionView:(AKVoteCaptionView *) sender chosePhotoWithURL:(NSURL *)url {
+    NSLog(@"AKDelegate recieved url %@",url);
+}
 
 @end
 
