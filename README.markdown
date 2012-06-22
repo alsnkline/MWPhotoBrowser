@@ -1,4 +1,4 @@
-# with AKVoteCaptionView - a custom caption view containing a single button
+# with AKVoteCaptionView - a single button custom caption view
 
 AKVoteCaptionView implements a custom caption view on top of MWPhotoBrowser. The custom view contains a single button that reports the URL of the currently showing photo to its delegate. If the currently showing photo doesn't have a URL it reports 'nil'.
 
