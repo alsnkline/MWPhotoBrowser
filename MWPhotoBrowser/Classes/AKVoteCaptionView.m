@@ -36,11 +36,11 @@ static const CGFloat labelPadding = 10; //mirror of MWCaptionView implementation
 
 // I overrode this method as I counldn't figure out how to directly access the _photo URL private ivar - this method sets the caption view to have the photo as a fully accesible property
 
-- (id)initWithPhoto:(id<MWPhoto>)photo {  //probably should just over ride necessary line in main library
+- (id)initWithPhoto:(id<MWPhoto>)photo { 
     self = [super initWithFrame:CGRectMake(0, 0, 320, 44)]; // Random initial frame
     if (self) {
-        //        _photo = [photo retain]; // from lib
-        // _photo = photo; // from issue 55
+        // _photo = [photo retain]; // from lib
+        // _photo = photo; // from github issue 55
         self.photo = photo;  //added by Alison to make it work with property
         self.opaque = NO;
         self.backgroundColor = [UIColor colorWithWhite:0 alpha:0.6];
@@ -84,6 +84,7 @@ static const CGFloat labelPadding = 10; //mirror of MWCaptionView implementation
     
     self.button = button;
     [self addSubview:button];
+    
 }
 
 - (CGSize)sizeThatFits:(CGSize)size {
@@ -98,12 +99,11 @@ static const CGFloat labelPadding = 10; //mirror of MWCaptionView implementation
     if ([self.photo respondsToSelector:@selector(photoURL)]) {
         photoURL = [self.photo performSelector:@selector(photoURL)];
     }
-    [_delegate akVoteCaptionView:self chosePhotoWithURL:photoURL];
     NSLog(@"photoURL = %@ sent to delegate", photoURL);
+    [_delegate akVoteCaptionView:self chosePhotoWithURL:photoURL];
 }
 
 - (void)dealloc {
-    [_delegate release];
     [_button release];
     [_photo release];
     [super dealloc];
