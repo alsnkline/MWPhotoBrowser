@@ -1,3 +1,7 @@
+# with AKVoteCaptionView - a custom caption view containing a single button
+
+AKVoteCaptionView implements a custom caption view on top of MWPhotoBrowser. The custom view contains a single button that reports the URL of the currently showing photo to its delegate. If the currently showing photo doesn't have a URL it reports 'nil'.
+
 # MWPhotoBrowser — A simple iOS photo browser
 
 MWPhotoBrowser is an implementation of a photo browser similar to the native Photos app in iOS. It can display one or more images by providing either `UIImage` objects, file paths to images on the device, or URLs to images online. The photo browser handles the downloading and caching of photos from the web seamlessly. Photos can be zoomed and panned, and optional (customisable) captions can be displayed. Works on iOS 3.2+. All strings are localisable so they can be used in apps that support multiple languages.
